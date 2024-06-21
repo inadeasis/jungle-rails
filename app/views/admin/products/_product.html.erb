@@ -8,10 +8,10 @@
     <p><%= product.description %></p>
   </td>
   <td>
-    <%= number_to_currency(product.price, precision: 2) %>
+    <%= product.category.name %>
   </td>
   <td>
-    <%= product.price %>
+    <%= number_to_currency(product.price, precision: 2) %>
   </td>
   <td>
     <%= product.quantity %>
